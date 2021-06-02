@@ -2,8 +2,11 @@ const express = require(`express`);
 const app = express();
 const port = 3000;
 
+// Drinks database
+const drinks = require(`./models/drinks`)
+
 app.get(`/`, (req, res) => {
-    res.send(`Welcome to Gitpub!`)
+    res.send(drinks)
 })
 
 
