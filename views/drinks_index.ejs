@@ -19,14 +19,16 @@
         }
     </style>
     <h1>Welcome to Gitpub</h1>
-    <ul>
-        <% drinks.forEach(function(drink) { %>
-            <li>
-                <%= drink.name %>
-            </li>
-            <% }) %>
-    </ul>
-    <script src="" async defer></script>
+
+    <%# Loops through drinks, displays and capitalizes first letter. %>
+        <ul>
+            <% drinks.forEach(function(drink) { %>
+                <li>
+                    <%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %>
+                </li>
+                <% }) %>
+        </ul>
+        <script src="" async defer></script>
 </body>
 
 </html>
