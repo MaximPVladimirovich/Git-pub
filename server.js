@@ -4,10 +4,17 @@ const port = 3000;
 
 // Drinks database
 const drinks = require(`./models/drinks`)
+const food = require(`./models/food`)
+
 
 app.get(`/drinks`, (req, res) => {
     res.render(`drinks_index.ejs`, {
-        drinks
+        drinks, food
+    })
+})
+app.get(`/food/:id`, (req, res) => {
+    res.render(`food_show.ejs`, {
+        food: food[req.params.id]
     })
 })
 
