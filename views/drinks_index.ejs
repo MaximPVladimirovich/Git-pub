@@ -19,8 +19,13 @@
         }
     </style>
     <h1>Welcome to Gitpub</h1>
-
-
+    <ul>
+        <% drinks.forEach(function(drink) { %>
+            <li>
+                <%= drink.name %>
+            </li>
+            <% }) %>
+    </ul>
     <script src="" async defer></script>
 </body>
 
