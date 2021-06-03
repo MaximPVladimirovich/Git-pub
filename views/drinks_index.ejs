@@ -8,31 +8,10 @@
 
 <body>
     <%- include(`./partials/header`); %>
-        <style type="text/css">
-            body {
-                color: blanchedalmond;
-                background-color: steelblue;
-            }
-        </style>
 
 
-        <%# Loops through drinks, displays and capitalizes first letter. %>
-            <ul>
-                <% for(let i=0; i < drinks.length; i++){ %>
-                    <li><a href="/drinks/<%=i%>">
-                            <%=drinks[i].name %>
-                        </a>
-                    </li>
-                    <% } %>
-            </ul>
-            <ul>
-                <% for(let i=0; i < food.length; i++){ %>
-                    <li><a href="/food/<%=i%>">
-                            <%=food[i].name%>
-                        </a>
-                    </li>
-                    <% } %>
-            </ul>
+        <%- include(`./partials/main`); %>
+
             <%- include(`./partials/footer`); %>
                 <script src="" async defer></script>
 </body>
