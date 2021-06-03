@@ -15,9 +15,26 @@
 </head>
 
 <body>
-    <h1>Drinks</h1>
+    <style type="text/css">
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+        }
 
+        img {
+            width: 300px;
+        }
+    </style>
     <a href="/drinks">Back to menu </a>
+    <h1>At foo bar</h1>
+    <h2>
+        <%=drinks.name%>
+    </h2>
+
+    <img src="<%=drinks.image%>">
+    <h3>
+        $ <%=drinks.price%>
+    </h3>
 
 
     <script src="" async defer></script>
